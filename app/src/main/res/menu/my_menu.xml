@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="MyProfile" android:icon="@drawable/ic_baseline_person_24" android:id="@+id/myProfile"/>
+    <item android:title="MyRestaurants" android:icon="@drawable/ic_baseline_restaurant_menu_24" android:id="@+id/myRestaurants"/>
+    <item android:title="MyOrders" android:icon="@drawable/ic_baseline_history_24" android:id="@+id/myOrders"/>
+
+</menu>
+
+
+
+

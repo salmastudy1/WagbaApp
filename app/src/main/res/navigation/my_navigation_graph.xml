@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation_graph"
+    app:startDestination="@id/myRestaurants">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.wagba_salma.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/myRestaurants"
+        android:name="com.example.wagba_salma.MyRestaurants"
+        android:label="fragment_my_restaurants"
+        tools:layout="@layout/fragment_my_restaurants" >
+        <action
+            android:id="@+id/action_myRestaurants_to_myDishes"
+            app:destination="@id/myDishes" />
+    </fragment>
+    <fragment
+        android:id="@+id/myDishes"
+        android:name="com.example.wagba_salma.MyDishes"
+        android:label="fragment_my_dishes"
+        tools:layout="@layout/fragment_my_dishes" />
+    <fragment
+        android:id="@+id/myProfile"
+        android:name="com.example.wagba_salma.myProfile"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/myOrders"
+        android:name="com.example.wagba_salma.myOrders"
+        android:label="fragment_my_orders"
+        tools:layout="@layout/fragment_my_orders" />
+</navigation>
